@@ -18,5 +18,8 @@ export function Number() {
     }
     console.log(`Sie haben noch ${attempts - 1} Versuche.`);
   }
-  
-  console.log(`Leider haben Sie alle Versuche aufgebraucht. Die Zahl war ${randomNumber}.`);
+
+  console.log(
+    `Leider haben Sie alle Versuche aufgebraucht. Die Zahl war ${randomNumber}.`
+  );
+}
