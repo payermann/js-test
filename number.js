@@ -4,8 +4,6 @@ export function Number() {
   const randomNumber = Math.floor(Math.random() * 100) + 1;
   console.log("Erraten Sie die Zahl zwischen 1 und 100!");
 
-  let attempts = 5;
-
   for (let attempts = 5; attempts > 0; attempts--) {
     const userGuess = questionInt("Ihre Vermutung: ");
     if (userGuess === randomNumber) {
