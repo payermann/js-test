@@ -1,10 +1,13 @@
 import { question, questionInt, keyInSelect } from "readline-sync";
 import { greet } from "./greets.js";
+import { Number } from "./number.js";
 
-const name = question("What is your name? ");
-const age = questionInt("What is your age? ");
+const name = question("Wie heißen Sie? ");
+const age = questionInt("Wie alt sind Sie? ");
 
 const cars = ["Toyota", "Chevrolet", "Ford", "Nissan", "Honda"];
-const car = keyInSelect(cars, "What is your favorite car?");
+const car = keyInSelect(cars, "Was ist Ihr Lieblingsauto?");
 
 greet(name, age, cars[car]);
+
+Number();
