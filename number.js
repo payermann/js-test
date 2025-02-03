@@ -6,7 +6,7 @@ export function Number() {
 
   let attempts = 5;
 
-  while (attempts > 0) {
+  for (let attempts = 5; attempts > 0; attempts--) {
     const userGuess = questionInt("Ihre Vermutung: ");
     if (userGuess === randomNumber) {
       console.log("Herzlichen Glückwunsch! Sie haben die Zahl erraten.");
@@ -16,11 +16,7 @@ export function Number() {
     } else {
       console.log("Zu hoch!");
     }
-    attempts--;
-    console.log(`Sie haben noch ${attempts} Versuche.`);
+    console.log(`Sie haben noch ${attempts - 1} Versuche.`);
   }
-
-  console.log(
-    `Leider haben Sie alle Versuche aufgebraucht. Die Zahl war ${randomNumber}.`
-  );
-}
+  
+  console.log(`Leider haben Sie alle Versuche aufgebraucht. Die Zahl war ${randomNumber}.`);
